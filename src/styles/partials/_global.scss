@@ -1,0 +1,19 @@
+$viewport: 1440;
+$baseline: 10;
+
+* {
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: inherit;
+}
+
+html, body{
+	font-size: 0.694vmax;
+}

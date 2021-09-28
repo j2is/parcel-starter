@@ -1,0 +1,38 @@
+// media aliases and breakpoints
+$desktopXL: 1680px;
+$desktop: 1440px;
+$tabletLandscape: 1024px;
+$tablet: 768px;
+$mobileLandscape: 520px;
+$mobile: 320px;
+
+// media devices
+@mixin smallDesktopAndBelow {
+  @media screen and (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tabletLandscapeAndBelow {
+  @media screen and (max-width: #{$tabletLandscape}) {
+    @content;
+  }
+}
+
+@mixin tabletPortraitAndBelow {
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobileOnly {
+  @media screen and (max-width: #{$mobileLandscape}) {
+    @content;
+  }
+}
+
+@mixin mobilePortraitAndBelow {
+  @media screen and (max-width: #{$mobilePortraitAndBelow}) {
+    @content;
+  }
+}
