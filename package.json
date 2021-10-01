@@ -7,6 +7,7 @@
     "dev": "npm run clean && parcel serve ./src/index.html",
     "start": "npm run clean && parcel serve ./src/index.html",
     "build": "npm run clean && parcel build ./src/index.html",
+    "build dev": "NODE_ENV=development npm run clean &&  parcel build ./src/index.html --no-minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://parcel-html-sass-js-starter-template.netlify.app",
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0",
     "posthtml-include": "^1.7.1",
